@@ -36,6 +36,13 @@ button{
     padding: 3px;
 }
 
+textarea{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 100%;
+}
+
 .navbar{
     height: 70px;
     background-color: #444;
@@ -98,7 +105,8 @@ button{
     font-size: 16px;
 }
 
-.search-form > form > button:hover{
+.search-form > form > button:hover,
+.card > a:hover{
     background-color: rgba(51, 51, 51, 0.8);
 }
 
@@ -117,11 +125,13 @@ button{
     width: 100%;
 }
 
-.btn-create{
+.btn-create,
+.btn-back{
     margin-top: 10px;
 }
 
-.btn-create > a{
+.btn-create > a,
+.btn-back > a{
     background: #fff;
     border: 2px solid #333;
     color: #333;
@@ -145,4 +155,13 @@ button{
 
 .card > a{
     text-align: center;
+}
+
+.back-home{
+    margin-top: 10px;
+    text-align: center;
+}
+
+.back-home > a:hover{
+    text-decoration: underline;
 }
